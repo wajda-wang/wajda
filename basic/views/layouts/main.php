@@ -22,7 +22,7 @@ AppAsset::register($this);
 </head>
 <body>
 
-<?php $this->beginBody() ?>
+<?php $this->beginBody()?>
     <div class="wrap">
         <?php
             NavBar::begin([
@@ -32,6 +32,7 @@ AppAsset::register($this);
                     'class' => 'navbar-inverse navbar-fixed-top',
                 ],
             ]);
+
             echo Nav::widget([
                 'options' => ['class' => 'navbar-nav navbar-right'],
                 'items' => [
@@ -45,15 +46,17 @@ AppAsset::register($this);
                             'linkOptions' => ['data-method' => 'post']],
                 ],
             ]);
+
             NavBar::end();
         ?>
-
         <div class="container">
             <?= Breadcrumbs::widget([
                 'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
             ]) ?>
             <?= $content ?>
         </div>
+
+
     </div>
 
     <footer class="footer">

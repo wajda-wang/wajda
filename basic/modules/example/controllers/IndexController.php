@@ -4,11 +4,11 @@ namespace app\modules\example\controllers;
 
 use yii\web\Controller;
 
-class DefaultController extends Controller
+class IndexController extends Controller
 {
     public function actionIndex()
     {
-        echo 200;
+        echo 'IndexController';
         echo "<hr>";exit;
         return $this->render('index');
     }

@@ -47,6 +47,12 @@ class SiteController extends Controller
         ];
     }
 
+    public function actionA()
+    {
+
+        return $this->render('a');
+    }
+
     public function actionIndex()
     {
 		
